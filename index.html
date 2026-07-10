@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exam Admit Card Portal</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:Arial,sans-serif;
+background:#eef3f8;
+}
+.header{
+background:#0b5ea8;
+color:#fff;
+padding:18px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
+.sub{
+text-align:center;
+padding:8px;
+color:#555;
+}
+.box{
+width:350px;
+max-width:95%;
+margin:40px auto;
+background:#fff;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+h2{
+text-align:center;
+margin-bottom:20px;
+color:#0b5ea8;
+}
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+button{
+width:100%;
+padding:12px;
+background:#0b5ea8;
+color:#fff;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+button:hover{
+background:#084b84;
+}
+.footer{
+text-align:center;
+margin-top:30px;
+color:#666;
+font-size:13px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">EXAM ADMIT CARD PORTAL</div>
+<div class="sub">Candidate Login</div>
+
+<div class="box">
+<h2>Login</h2>
+
+<input type="text" id="u" placeholder="Username">
+<input type="password" id="p" placeholder="Password">
+
+<button onclick="login()">Login</button>
+</div>
+
+<div class="footer">
+© 2026 Admit Card Portal
+</div>
+
+<script>
+function login(){
+if(document.getElementById('u').value=="1827282" &&
+document.getElementById('p').value=="1234"){
+window.location="admitcard.html";
+}else{
+alert("Invalid Username or Password");
+}
+}
+</script>
+
+</body>
+  </html>
